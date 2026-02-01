@@ -1,0 +1,19 @@
+{
+  "name": "task-manager-app",
+  "version": "1.0.0",
+  "description": "Full Stack Task Management App",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server --prefix server\" \"npm run dev --prefix client\"",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "server": "npm run server --prefix server",
+    "client": "npm run dev --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
